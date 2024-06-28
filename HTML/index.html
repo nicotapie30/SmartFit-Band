@@ -6,6 +6,7 @@
     <meta name="description" content="SmartFit Band es una pulsera que lleva el control de tus signos vitales">
     <title>SmartFit Band</title>
     <link rel="shortcut icon" href="../assets/images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header">
@@ -41,12 +42,12 @@
                 <img src="../assets/images/Pulsera.png" alt="Pulsera SmartFit Band" class="pulsera__img" title="Pulsera SmartFit Band">
                 <div class="container__button--img">
                     <button class="button__img">Comprar Ahora</button>
-                    <img class="button__icon" src="../assets/images/shopping_cart_24dp_FILL0_wght400_GRAD0_opsz24.png">
+                    <i class="fa-solid fa-cart-shopping"></i>
                 </div>
             </div>
             <div class="container__button--plus">
                 <button class="button__plus">Descubrir más</button>
-                <img class="button__icon--plus" src="../assets/images/arrow_downward_24dp_FILL0_wght400_GRAD0_opsz24.png">
+                <i class="fa-solid fa-arrow-down"></i>
             </div>
         </main>
     </section>
@@ -163,22 +164,43 @@
         </article>
     </section>
     <section class="section__form">
+        <h2 class="form__subtitle">Registrate Gratis</h2>
         <article class="form__container">
             <form class="form__container--content">
                 <div class="form__container--personal">
                     <input id="nombre" class="personal__content" type="text" placeholder="Nombre">
-                    <img class="personal__icon" src="../assets/images/Icono-persona.png">
+                    <i class="fa-solid fa-user"></i>
                     <input id="apellido" class="personal__content" type="text" placeholder="Apellido">
-                    <img class="personal__icon" src="../assets/images/Icono-persona.png">
+                    <i class="fa-solid fa-user"></i>
                 </div>
                 <div class="form__container--dates">
                     <input id="email" class="personal__content" type="email" placeholder="Email">
-                    <img class="dates__icon--email" src="../assets/images/Icon-mail.png">
+                    <i class="fa-solid fa-envelope"></i>
                     <input id="contraseña" class="personal__content" type="password" placeholder="Contraseña">
-                    <img class="dates__icon--password" src="../assets/images/Icon-password.png">
+                    <i class="fa-solid fa-lock"></i>
                 </div>
+                <input class="form__button" type="submit" title="Registrarse">
             </form>
         </article>
     </section>
+    <footer class="section__footer">
+        <div class="footer__container">
+            <div class="footer__contact">
+                <h2 class="contact__subtitle">Contactanos</h2>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="footer__copy">Politicas y Privacidad</div>
+            <div class="footer__copy">Términos y Condiciones</div>
+            <div class="footer__copy">&copy;Copyright</div>
+        </div>
+    </footer>
 </body>
 </html>
+
+
+
+
+
