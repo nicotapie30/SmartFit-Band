@@ -1,0 +1,317 @@
+
+/*------- RESET ------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Montserrat', 'Roboto';
+    min-height: 100dvh;
+    background: #bdc3c7; 
+    background: -webkit-linear-gradient( #93a3b8, #bdc3c7); 
+    background: linear-gradient( #93a3b8, #bdc3c7); 
+}
+
+
+/*------- HEADER -------*/
+
+.header{
+    width: 100%;
+    max-height: 10rem;
+    background-color: rgba(254, 254, 254, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+
+
+/*----- HEADER LOGO -----*/
+.header__img{
+    padding: 2rem;
+    flex-basis: 50%;
+}
+
+
+.img__img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/*------ HEADER NAVBAR ------*/
+
+.container__nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.header__nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+
+.nav__item{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    justify-self: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.item__link{
+    color: black;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    transition: all 200ms ease;
+
+}
+
+
+.item__link:hover{
+    color: #03484c;
+}
+
+
+
+
+
+/*------ MAIN ------*/
+
+
+
+/*------ MAIN TÍTULO ----*/
+.main__container{
+    background: linear-gradient(#93a3b8, #93a3b8,#8fa1b8,#bdc3c7, #bdc3c7, #bdc3c7, #99a8ba);
+    max-width: 100%;
+    height: 100%;
+    margin: 13rem 0 0 0;
+    padding: 0 0 0 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.container__text{
+    width: 100%;
+    height: 100%;
+    flex-basis: 55%;
+}
+
+
+.container__titles{
+    max-width: 100%;
+    height: 100%;
+    margin-bottom: 3rem;
+}
+
+
+.main__title{
+    margin-bottom: 1.5rem;
+    font-size: 6rem;
+    font-family: 'Montserrat';
+    color: #fff;
+    text-wrap: balance;
+    text-wrap: pretty;
+}
+
+
+.title__strong{
+    font-size: 7rem;
+    color: #122f39;
+    text-wrap: nowrap;
+}
+
+
+
+/*------ MAIN SUBTÍTULO ------*/
+.main__subtitle{
+    font-size: 2.7rem;
+    font-weight: 600;
+    color: #f3f3f3;
+    text-wrap: nowrap;
+}
+
+
+
+
+
+/*----- MAIN LIST ------*/
+
+.container__main--list{
+    width: 100%;
+    height: 100%;
+    margin: 5rem 0 10rem 0;
+}
+
+
+.list__item{
+    padding: 1rem;
+    list-style: disc;
+    font-size: 2rem;
+    color: #1c232e;
+}
+
+
+.item__span{
+    font-family: 'Roboto Condensed';
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #122f39;
+    cursor: default;
+    transition: all 200ms ease;
+}
+
+
+.item__span:hover{
+    color: #fff;
+}
+
+
+
+
+/*------ MAIN IMÁGEN ------*/
+
+.container__img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main__img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.pulsera__img{
+    width: 70%;
+    height: 70%;
+    animation: flotar 4s 0.1s infinite ease;
+}
+
+
+/*------ ANIMACIÓN DE PULSERA ------*/
+
+@keyframes flotar {
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+
+
+/*------ SOMBRA ------*/
+
+.main__shadow{
+    align-self: center;
+    width: 220px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(79, 79, 79, 0.2);
+    animation: sombra 4s 0.1s infinite;
+}
+
+
+
+/*------ ANIMACIÓN DE SOMBRA ------*/
+
+@keyframes sombra {
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+
+/*----- ESTILOS DEL BOTÓN ------*/
+
+.container__button--img{
+    justify-self: end;
+    align-self: center;
+    margin-top: 4.5rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.button__img{
+    padding: 1.3rem 2rem;
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: #03484c;
+    border: 1px solid #03484c;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+
+.fa-cart-shopping{
+    margin-left: 2rem;
+}
+
+
+.button__img:hover{
+    background: rgba(240, 250, 250, 0.3);
+    color: #03484c;
+    border: 1px solid #03484c;
+}
+
+
+
