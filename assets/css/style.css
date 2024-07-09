@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html{
@@ -12,11 +13,11 @@ html{
 
 body{
     font-size: 1.6rem;
-    font-family: 'Montserrat', 'Roboto';
+    font-family: 'Montserrat', 'Roboto','Roboto Condensed';
     min-height: 100dvh;
     background: #bdc3c7; 
-    background: -webkit-linear-gradient( #93a3b8, #bdc3c7); 
-    background: linear-gradient( #93a3b8, #bdc3c7); 
+    background: -webkit-linear-gradient( #93a3b8, #d1d4d5); 
+    background: linear-gradient( #93a3b8, #d1d4d5); 
 }
 
 
@@ -115,7 +116,7 @@ body{
 
 /*------ MAIN TÍTULO ----*/
 .main__container{
-    background: linear-gradient(#93a3b8, #93a3b8,#8fa1b8,#bdc3c7, #bdc3c7, #bdc3c7, #99a8ba);
+    background: linear-gradient(#93a3b8, #93a3b8,#8fa1b8,#bdc3c7, #bdc3c7, #bdc3c7, #a4aebf);
     max-width: 100%;
     height: 100%;
     margin: 13rem 0 0 0;
@@ -363,8 +364,81 @@ body{
 
 
 
+
 /*------ SECTION BENEFICIOS -------*/
 
+.section__benefit{
+    width: 100%;
+    height: 100%;
+    margin: 0 0 10rem 0;
+}
+
+
+.benefit__subtitle{
+    text-align: center;
+    color: #092f3a;
+    font-size: 6rem;
+    margin: 0 0 7rem 0;
+}
+
+
+.benefit__container{
+    max-width: 100%;
+    height: 100%;
+    margin: 0 5rem 0 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+
+
+.benefit__content{
+    width: 100%;
+    max-height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 10px;
+    transition: all 200ms ease;
+}
+
+
+.benefit__content:hover{
+    transform: scale(1.1,1.1);
+}
+
+
+
+.benefit__img{
+    width: 100%;
+    height: 250px;
+    margin: 0 0 2rem 0;
+    border-radius: 10px;
+}
+
+
+.benefit__description{
+    text-align: center;
+}
+
+
+.benefit__span{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+}
+
+
+.benefit__text{
+    width: 100%;
+    height: 100%;
+    margin: 2rem 0 0 0;
+    text-wrap: balance;
+    text-wrap: pretty;
+    font-weight: 500;
+}
 
 
 
